@@ -1,4 +1,4 @@
-defmodule HermesWeb.Gettext do
+defmodule Hermes.Gettext do
   @moduledoc """
   A module providing Internationalization with a gettext-based API.
 

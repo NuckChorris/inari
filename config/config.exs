@@ -6,12 +6,7 @@
 use Mix.Config
 
 # Configures the endpoint
-config :hermes, HermesWeb.Endpoint,
-  url: [host: "localhost"],
-  secret_key_base: "rg87zu3dsaz4Rb4Tp34fMOLylswdidHT/orLydESdCxybphoN4dEJytIUgIWvaLj",
-  render_errors: [view: HermesWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Hermes.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+config :hermes, Hermes.Endpoint, url: [host: "localhost"]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -20,4 +15,4 @@ config :logger, :console,
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"
