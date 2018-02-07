@@ -1,7 +1,26 @@
-language: elixir
+# System
 sudo: false
+env:
+  - MIX_ENV=test
 
+# Language
+language: elixir
 elixir: '1.6.1'
 otp_release: '20.0'
 
-script: mix espec
+# Cache
+cache:
+  directories:
+    - deps
+    - _build
+
+# Install
+install:
+  - mix local.rebar --force
+  - mix local.hex --force
+  - mix deps.get
+  - mix deps.compile
+
+# Test
+script:
+  - mix espec
