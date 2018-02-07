@@ -8,7 +8,7 @@ defmodule Inari.Endpoint do
   plug Plug.Head
 
   plug Plug.Parsers, parsers: [:json], pass: ["application/vnd.api+json"], json_decoder: Poison
-  plug Inari.Utils.Accepts, type: "application/vnd.api+json"
+  plug Inari.Plug.Accepts, type: "application/vnd.api+json"
 
   plug :parse_jsonapi
 
