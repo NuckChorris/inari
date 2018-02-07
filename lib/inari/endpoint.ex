@@ -1,4 +1,4 @@
-defmodule Hermes.Endpoint do
+defmodule Inari.Endpoint do
   use Plug.Builder
   use Plug.Debugger
   import Plug.Conn
@@ -8,7 +8,7 @@ defmodule Hermes.Endpoint do
   plug Plug.Head
 
   plug Plug.Parsers, parsers: [:json], pass: ["application/vnd.api+json"], json_decoder: Poison
-  plug Hermes.Utils.Accepts, type: "application/vnd.api+json"
+  plug Inari.Utils.Accepts, type: "application/vnd.api+json"
 
   plug :parse_jsonapi
 

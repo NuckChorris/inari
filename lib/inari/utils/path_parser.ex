@@ -1,4 +1,4 @@
-defmodule Hermes.Utils.PathParser do
+defmodule Inari.Utils.PathParser do
   @spec parse(String.t()) :: {atom, tuple()}
   def parse(path) do
     ["" | path] = String.split(path, "/")

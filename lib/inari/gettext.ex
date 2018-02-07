@@ -1,11 +1,11 @@
-defmodule Hermes.Gettext do
+defmodule Inari.Gettext do
   @moduledoc """
   A module providing Internationalization with a gettext-based API.
 
   By using [Gettext](https://hexdocs.pm/gettext),
   your module gains a set of macros for translations, for example:
 
-      import HermesWeb.Gettext
+      import InariWeb.Gettext
 
       # Simple translation
       gettext "Here is the string to translate"
@@ -20,5 +20,5 @@ defmodule Hermes.Gettext do
 
   See the [Gettext Docs](https://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :hermes
+  use Gettext, otp_app: :inari
 end

@@ -1,10 +1,10 @@
-defmodule Hermes.JSONAPI.Document do
+defmodule Inari.JSONAPI.Document do
   @moduledoc """
   Structure which represents an entire JSONAPI document
   """
   defstruct data: nil, errors: nil, meta: nil, jsonapi: nil, links: nil, included: nil
 
-  alias Hermes.JSONAPI, as: J
+  alias Inari.JSONAPI, as: J
 
   @type t :: %__MODULE__{
     data: nil | J.Resource.t | [J.Resource.t],

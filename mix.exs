@@ -1,9 +1,9 @@
-defmodule Hermes.Mixfile do
+defmodule Inari.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :hermes,
+      app: :inari,
       version: "1.0.0",
       elixir: "~> 1.6",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule Hermes.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Hermes.Application, []},
+      mod: {Inari.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

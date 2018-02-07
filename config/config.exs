@@ -6,7 +6,7 @@
 use Mix.Config
 
 # Configures the endpoint
-config :hermes, Hermes.Endpoint, url: [host: "localhost"]
+config :inari, Inari.Endpoint, url: [host: "localhost"]
 
 # Configures Elixir's Logger
 config :logger, :console,

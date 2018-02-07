@@ -1,4 +1,4 @@
-defmodule Hermes.JSONAPI.Error do
+defmodule Inari.JSONAPI.Error do
   @moduledoc """
   Structure which represents a JSONAPI Error object
   """
@@ -7,7 +7,7 @@ defmodule Hermes.JSONAPI.Error do
 
   @type t :: %__MODULE__{
     id: nil | String.t,
-    links: nil | [Hermes.JSONAPI.Link.t],
+    links: nil | [Inari.JSONAPI.Link.t],
     status: nil | String.t,
     code: nil | String.t,
     title: nil | String.t,

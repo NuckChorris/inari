@@ -1,6 +1,6 @@
-defmodule Hermes.Utils.PathParserSpec do
+defmodule Inari.Utils.PathParserSpec do
   use ESpec
-  alias Hermes.Utils.PathParser
+  alias Inari.Utils.PathParser
 
   describe ".parse(url)" do
     context "for /users/1/relationships/likes" do

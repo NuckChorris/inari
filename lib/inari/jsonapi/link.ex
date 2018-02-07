@@ -1,4 +1,4 @@
-defmodule Hermes.JSONAPI.Link do
+defmodule Inari.JSONAPI.Link do
   defstruct href: nil, meta: %{}
 
   @type t :: %__MODULE__{

@@ -1,6 +1,6 @@
-defmodule Hermes.JSONAPI.ResourceSpec do
+defmodule Inari.JSONAPI.ResourceSpec do
   use ESpec
-  alias Hermes.JSONAPI.Resource
+  alias Inari.JSONAPI.Resource
 
   describe ".parse()" do
     context "on a list" do

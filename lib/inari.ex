@@ -1,6 +1,6 @@
-defmodule Hermes do
+defmodule Inari do
   @moduledoc """
-  Hermes keeps the contexts that define your domain
+  Inari keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

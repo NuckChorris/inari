@@ -1,6 +1,6 @@
-defmodule Hermes.JSONAPI.ErrorSpec do
+defmodule Inari.JSONAPI.ErrorSpec do
   use ESpec
-  alias Hermes.JSONAPI.Error
+  alias Inari.JSONAPI.Error
 
   describe ".parse()" do
     context "on a list" do

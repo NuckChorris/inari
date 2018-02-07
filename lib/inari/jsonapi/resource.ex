@@ -1,10 +1,10 @@
-defmodule Hermes.JSONAPI.Resource do
+defmodule Inari.JSONAPI.Resource do
   @moduledoc """
   Structure which represents an object in JSONAPI
   """
   defstruct id: nil, type: nil, attributes: %{}, relationships: %{}, links: %{}, meta: %{}
 
-  alias Hermes.JSONAPI, as: J
+  alias Inari.JSONAPI, as: J
 
   @type t :: %__MODULE__{
     id: nil | String.t,
