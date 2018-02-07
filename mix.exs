@@ -40,6 +40,7 @@ defmodule Hermes.Mixfile do
       {:gettext, "~> 0.11"},
 
       # Development
+      {:credo, "~> 0.9.0-rc1", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
       {:espec, "~> 1.5.0", only: [:dev, :test]}
     ]
