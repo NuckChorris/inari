@@ -38,6 +38,8 @@ defmodule Hermes.Mixfile do
       {:cowboy, "~> 1.0"},
       # Translation
       {:gettext, "~> 0.11"},
+      # Parsing JSON
+      {:poison, "~> 3.1"},
 
       # Development
       {:credo, "~> 0.9.0-rc1", only: [:dev, :test], runtime: false},
